@@ -19,13 +19,34 @@
 }
 .grid-item:hover, .feature-gallery:hover{
     background: #ffffffdd;
-    opacity: 0.7;
+    opacity: 0.5;
     cursor: pointer;
 }
 .feature-gallery img, .grid-item img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+}
+
+.add-image {
+    text-align: center;
+    background: #efeeee;
+    border: 2px dashed #767575;
+    margin: 10px;
+    cursor: pointer;
+}
+.add-image-content {
+    position: relative;
+    top: 40%;
+}
+.add-image svg {
+    width: 50px;
+    height: 50px;
+}
+.add-image span {
+    display: block;
+    font-size: 21px;
+    margin-top: 20px;
 }
 /* Styles for extra-large devices (xl) */
 @media screen and (min-width: 110px) and (max-width:1250) {
