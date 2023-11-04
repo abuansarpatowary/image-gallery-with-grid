@@ -1,7 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
 
@@ -48,42 +47,35 @@
     font-size: 21px;
     margin-top: 20px;
 }
-/* Styles for extra-large devices (xl) */
-@media screen and (min-width: 110px) and (max-width:1250) {
-    .grid {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-}
 
-/* Styles for medium devices (md) */
-@media screen and (max-width: 992px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
     .grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
-}
-
-/* Styles for small devices (sm) */
-@media screen and (max-width: 768px) {
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
-}
-
-/* Styles for extra small devices (xs) */
-@media screen and (max-width: 576px) {
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
     .grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
-}
-
-/* Styles for tiny devices (ts) */
-/* @media screen and (max-width: 320px) {
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
     .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
     }
-} */
+  }
